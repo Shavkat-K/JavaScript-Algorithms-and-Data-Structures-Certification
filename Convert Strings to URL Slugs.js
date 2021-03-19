@@ -6,3 +6,10 @@ function urlSlug(title) {
     .join('-')
 }
 console.log(urlSlug(" Winter Is  Coming"))
+
+function spinalCase(str) {
+  return str
+    .split(/\s|_|(?=[A-Z])/)
+    .join('-')
+    .toLowerCase()
+}
